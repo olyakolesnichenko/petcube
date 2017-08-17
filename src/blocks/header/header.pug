@@ -1,3 +1,15 @@
-mixin header(siteName)
+
+mixin header()
 	+b.header
-		+e('h1').title I am #{siteName}
+		+e.join
+			+b.dog-block
+				+e('span').join-text Join the biggest rescue dog party! #PetcubeRescue
+				+e.icon(src="http://favicon.yandex.net/favicon/github.com")
+				+e('a').link(src="https://petcube.com") Register now
+		+e.main
+			+b('a').main-menu(src="https://petcube.com")
+				+e.icon(src="http://favicon.yandex.net/favicon/github.com")
+				+e.text Petcube
+
+
+
