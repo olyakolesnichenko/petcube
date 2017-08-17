@@ -26,8 +26,7 @@ const reload = (done) => {
 
 const ignorePug = [
 	'!src/layouts/**',
-  '!src/blocks/**',
-	'!src/globals/**'
+	'!src/blocks/**'
 ];
 
 const jsAppFiles = [
@@ -89,6 +88,9 @@ gulp.task('copy', function() {
 
 gulp.task('build', gulp.parallel('html', 'css', 'css:vendor', 'js', 'js:vendor', 'copy'));
 
+gulp.task('clean', () => {
+	return del('build');
+});
 
 gulp.task('watch', () => {
 	gulp.watch('src/**/*.pug', gulp.series('html', reload));
@@ -99,4 +101,4 @@ gulp.task('watch', () => {
 
 gulp.task('serve', gulp.parallel(serve, 'watch'));
 
-gulp.task('default', gulp.series('build', 'serve'));
+gulp.task('default', gulp.series('clean', 'build', 'serve'));

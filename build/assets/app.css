@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Museo Sans';
+  src: url("f/museosans-100.woff") format('woff'), url("f/museosans-100.ttf") format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+body {
+  visibility: visible;
+  background: #008000;
+  font-family: 'Museo Sans';
+  font-weight: 100;
+}
+
+h1 {
+  font-size: 3em;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+}
+
+.header {
+  border: 3px solid #ff0;
+}
+.header__title {
+  color: #fff;
+}
