@@ -6,9 +6,7 @@
 }
 body {
   visibility: visible;
-  background: #008000;
   font-family: 'Museo Sans';
-  font-weight: 100;
 }
 
 h1 {
@@ -22,8 +20,22 @@ h3 {
 }
 
 .header {
-  border: 3px solid #ff0;
+  box-shadow: 0 0 16px rgba(0,0,0,0.25);
 }
-.header__title {
+.header__join {
+  background-color: #8e7af9;
   color: #fff;
+  text-align: center;
+}
+.header__join .dog-block__icon {
+  padding: 2px 25px 0;
+}
+.header__join .dog-block__link {
+  text-transform: capitalize;
+}
+.header__join .dog-block__link svg {
+  width: 15px;
+  height: 15px;
+  margin-left: 5px;
+  vertical-align: middle;
 }
