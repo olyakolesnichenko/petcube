@@ -26,6 +26,7 @@ h3 {
   background-color: #8e7af9;
   color: #fff;
   text-align: center;
+  font-size: 16px;
 }
 .header__join .dog-block__icon {
   padding: 2px 25px 0;
@@ -38,4 +39,80 @@ h3 {
   height: 15px;
   margin-left: 5px;
   vertical-align: middle;
+}
+.header__main {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
+.header__main .logo {
+  text-decoration: none;
+}
+.header__main .logo__icon {
+  padding: 18px 5px 18px 20px;
+}
+.header__main .logo__text {
+  font-weight: bold;
+  font-size: 20px;
+  vertical-align: middle;
+  color: #000;
+}
+.header__main .main-menu {
+  margin: 0;
+  padding: 25px 0;
+}
+.header__main .main-menu__item {
+  float: right;
+  list-style: none;
+  padding-right: 20px;
+  font-size: 16px;
+  height: 100%;
+  cursor: pointer;
+}
+.header__main .main-menu__link {
+  text-decoration: none;
+  color: #323232;
+}
+.header__main .right-nav {
+  margin: 0;
+}
+.header__main .right-nav__item {
+  float: left;
+  list-style: none;
+  padding: 25px 20px 0;
+  font-size: 20px;
+  line-height: 20px;
+  border-left: 2px solid #f2f2f2;
+  height: 100%;
+  cursor: pointer;
+}
+.header__main .right-nav__item.dropdown {
+  padding-top: 27px;
+  font-weight: bold;
+  color: #999;
+  position: relative;
+}
+.header__main .right-nav__item.dropdown:after {
+  content: ' ';
+  height: 0;
+  position: absolute;
+  top: 30px;
+  width: 0;
+  border: 5px solid transparent;
+  border-top-color: #999;
+}
+.header__main .right-nav__link {
+  padding-top: 16px;
+  text-decoration: none;
+}
+.header__main .right-nav__link span {
+  color: #f9aa16;
+  vertical-align: top;
+  font-weight: bold;
+  margin-left: 3px;
+}
+.header__main .right-nav__link svg {
+  height: 20px;
+  width: 20px;
 }

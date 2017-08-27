@@ -9,11 +9,35 @@ mixin header()
 					svg.icon
 						use(xlink:href='#sign-to-right')
 		+e.main
-			+b('a').logo(src="https://petcube.com")
-				+e.icon(src="http://favicon.yandex.net/favicon/github.com")
+			+b('a').logo(href="https://petcube.com")
+				+e.icon(src='/assets/i/logo.png' alt='logo')
 				+e.text Petcube
 			+b('ul').main-menu
+				+e("li").item
+					+e('a').link(href="#") Products
+				+e("li").item
+					+e('a').link(href="#") App
+				+e("li").item
+					+e('a').link(href="#") Support
+				+e("li").item
+					+e('a').link(href="#") Why Petcube
+				+e("li").item
+					+e('a').link(href="#") PetFeed
+				+e("li").item
+					+e('a').link(href="#") Store
 			+b('ul').right-nav
+				+e('li').item.dropdown US
+				+e("li").item
+					+e('a').link(href="#")
+						svg.icon
+							use(xlink:href='#home')
+				+e("li").item
+					+e('a').link(href="#")
+						svg.icon
+							use(xlink:href='#cart')
+						span 0
+
+
 
 
 
