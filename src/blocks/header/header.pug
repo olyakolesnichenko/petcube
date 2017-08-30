@@ -1,4 +1,4 @@
-
+include ../menu/menu
 mixin header()
 	+b.header
 		+e.join
@@ -12,19 +12,7 @@ mixin header()
 			+b('a').logo(href="https://petcube.com")
 				+e.icon(src='/assets/i/logo.png' alt='logo')
 				+e.text Petcube
-			+b('ul').main-menu
-				+e("li").item
-					+e('a').link(href="#") Products
-				+e("li").item
-					+e('a').link(href="#") App
-				+e("li").item
-					+e('a').link(href="#") Support
-				+e("li").item
-					+e('a').link(href="#") Why Petcube
-				+e("li").item
-					+e('a').link(href="#") PetFeed
-				+e("li").item
-					+e('a').link(href="#") Store
+			+b-menu(mainMenuItems)
 			+b('ul').right-nav
 				+e('li').item.dropdown US
 				+e("li").item
