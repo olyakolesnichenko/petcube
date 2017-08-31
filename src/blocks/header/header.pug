@@ -9,11 +9,11 @@ mixin header()
 					svg.icon
 						use(xlink:href='#sign-to-right')
 		+e.main
-			+b('a').logo(href="https://petcube.com")
+			+e.logo: +b('a').logo(href="https://petcube.com")
 				+e.icon(src='/assets/i/logo.png' alt='logo')
 				+e.text Petcube
-			+b-menu(mainMenuItems)
-			+b('ul').right-nav
+			+e.menu: +b-menu(mainMenuItems)
+			+e.controls: +b('ul').right-nav
 				+e('li').item.dropdown US
 				+e("li").item
 					+e('a').link(href="#")
