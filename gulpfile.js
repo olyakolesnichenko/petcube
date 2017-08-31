@@ -26,7 +26,8 @@ const reload = (done) => {
 
 const ignorePug = [
 	'!src/layouts/**',
-	'!src/blocks/**'
+	'!src/blocks/**',
+	'!src/globals/**'
 ];
 
 const jsAppFiles = [
@@ -45,7 +46,7 @@ const cssVendorFiles = 'src/vendor/**/*.css';
 
 gulp.task('html', function(){
   return gulp.src(['src/**/*.pug', ...ignorePug])
-    .pipe(pug())
+    .pipe(pug({pretty: true}))
     .pipe(gulp.dest('build'))
 });
 

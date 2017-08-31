@@ -1,0 +1,14 @@
+extends ../header/header
+
+block right-nav
+    +b('ul').right-nav
+        +e('li').item.dropdown US
+        +e("li").item
+            +e('a').link(href="#")
+                svg.icon
+                    use(xlink:href='#home')
+        +e("li").item
+            +e('a').link(href="#")
+                svg.icon
+                    use(xlink:href='#cart')
+                span 0

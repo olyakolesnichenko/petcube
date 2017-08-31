@@ -1,15 +1,32 @@
-
+include ../menu/menu
 mixin header()
 	+b.header
 		+e.join
 			+b.dog-block
 				+e('span').join-text Join the biggest rescue dog party! #PetcubeRescue
-				+e.icon(src="http://favicon.yandex.net/favicon/github.com")
+				+e.icon(src='/assets/i/dog_m.png' alt='dog')
 				+e('a').link(src="https://petcube.com") Register now
+					svg.icon
+						use(xlink:href='#sign-to-right')
 		+e.main
-			+b('a').main-menu(src="https://petcube.com")
-				+e.icon(src="http://favicon.yandex.net/favicon/github.com")
+			+b('a').logo(href="https://petcube.com")
+				+e.icon(src='/assets/i/logo.png' alt='logo')
 				+e.text Petcube
+			+b-menu(mainMenuItems)
+			+b('ul').right-nav
+				+e('li').item.dropdown US
+				+e("li").item
+					+e('a').link(href="#")
+						svg.icon
+							use(xlink:href='#home')
+				+e("li").item
+					+e('a').link(href="#")
+						svg.icon
+							use(xlink:href='#cart')
+						span 0
+
+
+
 
 
 
