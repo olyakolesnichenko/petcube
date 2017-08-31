@@ -1,5 +1,7 @@
 $(function() {
 	var $block = $('.dog-block');
+	if (!$block.length) return;
+
 	var $link = $block.find('.dog-block__link');
 
 	$link.each(function(){

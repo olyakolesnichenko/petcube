@@ -1,5 +1,7 @@
 $(function() {
 	var $block = $('.header');
+	if (!$block.length) return;
+	
 	var $join = $block.find('.header__join');
 	var $logo = $block.find('.header__logo');
 	var $menu = $block.find('.header__menu');
