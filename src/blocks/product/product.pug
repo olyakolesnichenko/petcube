@@ -1,0 +1,9 @@
+mixin b-product(items)
+    +b('ul').product
+        each item in items
+            +e('li').item
+                +e('a').item-link(href=item.url)
+                    +b.product-wrapper
+                        +e('div').image(class =item.className, class='sprite')
+                        +e('p').title=item.title
+                        +e('p').text=item.text

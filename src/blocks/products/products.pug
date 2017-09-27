@@ -1,0 +1,5 @@
+include ../product/product
+mixin b-products()
+    +b.products
+        +e('h2').title You can use it for
+        +e.items: +b-product(products)

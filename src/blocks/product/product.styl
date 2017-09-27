@@ -1,0 +1,27 @@
+@import '../../globals/mixin'
+@import '../../globals/variables'
+.sprite
+  background: url('/assets/i/sprite-products.png') no-repeat top left
+  width: 188px
+  height: 243px
+  &.petcube-play
+    background-position: 0 0
+  &.petcube-bites
+    background-position: -198px 0
+  &.petcube-care
+    background-position: -396px 0
+.product
+  clearfix()
+  display inline-block
+  padding 0
+  &__item
+    float left
+    list-style none
+    width productWidth
+    padding 0 6%
+    &-link
+      display block
+      color textColor
+      text-decoration none
+      text-align left
+

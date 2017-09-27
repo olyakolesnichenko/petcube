@@ -1,0 +1,16 @@
+@import '../../globals/variables'
+.product-wrapper
+  &__image
+    margin 0 auto
+  &__title
+    font-size 22px
+    font-weight bold
+    &:after
+      content: '';
+      border-bottom: 1px solid productLineColor;
+      width: 45%;
+      display: block;
+      margin-top: 15px;
+      margin-bottom: 5px;
+  &__text
+    font-size 14px
